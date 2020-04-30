@@ -39,7 +39,7 @@
           <a class="nav-item nav-link page-scroll" href="#panel-pelayanan">LAYANAN KAMI</a>
           <a class="nav-item nav-link page-scroll" href="#panel-produk">PRODUK KAMI</a>
           <a class="nav-item nav-link page-scroll" href="#panel-contact">TESTIMONIAL</a>
-          <a class="nav-item btn btn-light button" href="login.php">Login</a>
+          <a class="nav-item btn btn-light button" data-toggle="modal" data-target="#exampleModal">Login</a>
         </div>
       </div>
     </div>
@@ -59,10 +59,11 @@
 
 
   <!-- LAYANAN KAMI  -->
-
-
-
-
+  <div class="panel-pelayanan" id="panel-pelayanan">
+    <div class="container-fluid">
+      <h2 class="kk"><strong>LAYANAN KAMI</strong></h2>
+    </div>
+  </div>
 
   <!-- PRODUK KAMI  -->
   <div class="panel-produk" id="panel-produk">
@@ -79,17 +80,69 @@
           <img src="image/icon/final.png" class="rounded-circle" alt="Final">
         </div>
       </div>
+      <div class="gallery">
+        <a target="_blank">
+          <img src="image/p1.jpeg" alt="Cinque Terre" width="500" height="300">
+        </a>
+        <div class="desc">Ubi Ungu</div>
+        <div class="harga">Rp. 000</div>
+      </div>
+      <div class="gallery">
+        <a target="_blank">
+          <img src="image/p1.jpeg" alt="Cinque Terre" width="500" height="300">
+        </a>
+        <div class="desc">Ubi Ungu</div>
+        <div class="harga">Rp. 000</div>
+      </div>
+      <div class="gallery">
+        <a target="_blank">
+          <img src="image/p1.jpeg" alt="Cinque Terre" width="500" height="300">
+        </a>
+        <div class="desc">Ubi Ungu</div>
+        <div class="harga">Rp. 000</div>
+      </div>
     </div>
   </div>
 
 
 
   <!-- TESTIMONIAL -->
+  <div class="panel-review" id="panel-contact">
+    <div class="container-fluid">
+      <h2 class="kk"><strong>TESTIMONIAL</strong></h2>
+    </div>
+  </div>
 
-
-
-
-
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: black;"><i class="fa fa-times" aria-hidden="true"></i></button>
+            </div>
+            <div class="modal-body">
+            <form>
+              <h5>LOGIN</h5>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+              </div>
+              <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+            </div>
+        </div>
+    </div>
+  </div>
+  <!-- Modal end -->
 
   <!-- Footer -->
   <div class="panel-footer">
